@@ -16,6 +16,6 @@ else
    exit 1
 fi
 
-mkdir -p $SINGULARITY_CACHEDIR SINGULARITY_TMPDIR SINGULARITY_SIFDIR
+mkdir -p $SINGULARITY_CACHEDIR $SINGULARITY_TMPDIR $SINGULARITY_SIFDIR
 
 singularity build $SINGULARITY_SIFDIR/deepjetcore3-latest.sif docker://cernml4reco/deepjetcore3:latest
